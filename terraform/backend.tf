@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    prefix = ""
-    // bucket  = "tf-pineapple-7130"
+    bucket = "UPDATE_ME"
+    prefix = "terraform-demo"
   }
 }
