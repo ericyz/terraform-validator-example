@@ -17,7 +17,7 @@
 provider "google" {
   project = var.project_id
 }
-
+ 
 /******************************************
   Create Bad Buckets (Uncomment to fail the validation)
 *******************************************/
