@@ -21,15 +21,15 @@ provider "google" {
 /******************************************
   Create Bad Buckets (Uncomment to fail the validation)
 *******************************************/
-# resource "google_storage_bucket" "bad-buckets" {
-#   project  = var.project_id
-#   location = "asia-southeast1"
-#   name     = "bad-bucket-${var.project_id}"
+resource "google_storage_bucket" "bad-buckets" {
+  project  = var.project_id
+  location = "asia-southeast1"
+  name     = "bad-bucket-${var.project_id}"
 
-#   labels = {
-#     securityzone = "notvalid"
-#   }
-# }
+  labels = {
+    securityzone = "notvalid"
+  }
+}
 
 
 /******************************************
